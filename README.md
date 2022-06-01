@@ -2,15 +2,15 @@
  In this team project, we applied the LSH and Hypercube algorithms , using various metrics ( euclidean , continuous/discrete Fréchet) in order to solve the k-nearest neighbors problem. Subsequently we generalized the procedure to create k clusters, with k-means initialization
 
 
+
+
 ΠΟΥΡΝΑΡΑΣ ΓΕΩΡΓΙΟΣ sdi1800162 ΑΡΒΑΝΙΤΕΛΛΗΣ ΒΑΙΟΣ ΙΑΣΩΝ sdi1800010
 
 Οδηγιες χρήσης
 
-make
-
-./cluster -i input_small_id -c exampleconfig.txt -o clusterout -complete -m LSH
-./lsh -i input_small_id -q query_small_id -k 4 -L 5 -o results -N 1 -R 10000
-./cube -i input_small_id -q query_small_id -k 14 -M 10 -probes 2 -o out -N 1 -R 10000   
+~make
+~Βγαλε τα αρχεια απο τον φακελο input
+~Δες εντολες παραδειγματα στο αρχειο test_commands
 
 Στο cluster to - complete ειναι optinal 
 
