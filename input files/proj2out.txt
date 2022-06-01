@@ -1,0 +1,54 @@
+Query: aer
+Algorithm: LSH
+Aproximate Nearest neighbor-: abt
+distanceAproximate: 77.9102
+distanceTrue: 77.9102
+Query: aeri
+Algorithm: LSH
+Aproximate Nearest neighbor-: abcb
+distanceAproximate: 259.367
+distanceTrue: 259.367
+Query: aes
+Algorithm: LSH
+Aproximate Nearest neighbor-: abdc
+distanceAproximate: 35.1283
+distanceTrue: 35.1283
+Query: aet
+Algorithm: LSH
+Aproximate Nearest neighbor-: adp
+distanceAproximate: 869.991
+distanceTrue: 324.367
+Query: aeti
+Algorithm: LSH
+Aproximate Nearest neighbor-: acst
+distanceAproximate: 24.1454
+distanceTrue: 24.1454
+Query: aey
+Algorithm: LSH
+Aproximate Nearest neighbor-: acst
+distanceAproximate: 27.7489
+distanceTrue: 27.7489
+Query: aezs
+Algorithm: LSH
+Aproximate Nearest neighbor-: advm
+distanceAproximate: 196.069
+distanceTrue: 196.069
+Query: afam
+Algorithm: LSH
+Aproximate Nearest neighbor-: abt
+distanceAproximate: 166.928
+distanceTrue: 166.928
+Query: afb
+Algorithm: LSH
+Aproximate Nearest neighbor-: adx
+distanceAproximate: 36
+distanceTrue: 36
+Query: afc
+Algorithm: LSH
+Aproximate Nearest neighbor-: aeh
+distanceAproximate: 15.4272
+distanceTrue: 15.4272
+
+TAproximateAverage: 0.000170734
+TTrueAverage: 0.000162285
+MAF: 2.68212

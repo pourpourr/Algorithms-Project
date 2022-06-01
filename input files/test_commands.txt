@@ -1,0 +1,39 @@
+! time valgrind ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm LSH -delta 1
+
+! time valgrind ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm Hypercube -delta 1
+
+! time valgrind ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm Frechet -metric discrete -delta 1
+
+time  valgrind ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 1 -M 10 -probes 2 -o proj2out -algorithm Frechet -metric continuous -delta 1
+
+time  ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm LSH -delta 2
+
+time  ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm Hypercube -delta 2
+
+time  ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm Frechet -metric discrete -delta 2
+
+time  ./search -i nasd_input.csv -q nasd_query.csv -k 3 -L 5 -M 10 -probes 2 -o proj2out -algorithm Frechet -metric continuous -delta 2
+
+time  valgrind ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Frechet -assignment Classic -complete -silhouette
+
+time  valgrind ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Frechet -assignment LSH_Frechet -complete -silhouette
+
+time  valgrind ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Vector -assignment Classic -complete -silhouette
+
+time  valgrind ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Vector -assignment LSH -complete -silhouette
+
+time  valgrind ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Vector -assignment Hypercube -complete -silhouette
+
+//alllaje to d
+
+time ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Frechet -assignment LSH_Frechet -complete -silhouette
+
+time ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Frechet -assignment Classic -complete -silhouette
+
+time ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Vector -assignment Classic -complete -silhouette
+
+time ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Vector -assignment LSH -complete -silhouette
+
+time ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Vector -assignment Hypercube -complete -silhouette
+
+time  ./cluster -i nasd_input.csv -c exampleconfig.txt -o cluster2out -update Mean_Frechet -assignment LSH_Frechet -complete -silhouette
